@@ -4,8 +4,8 @@ var mysql = require("mysql");
 var connection;  
 
 //Hooking project with JawsDB
-if (proccess.env.JAWSDB_URL) {
-  connection = mysql.createConnection(proccess.env.JAWSDB_URL);
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   mysql.createConnection({
     port: 3306,
